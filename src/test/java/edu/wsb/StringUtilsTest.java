@@ -21,4 +21,19 @@ class StringUtilsTest {
         String s = stringUtils.getFirstLetter(null);
         assertEquals(s, "");
     }
+    @Test
+    void getLastLetter_returns_last_letter(){
+        String s = stringUtils.getLastLetter("Java");
+        assertEquals(s, "a");
+    }
+    @Test
+    void getLastLetter_returns_empty_string_when_given_empty_string(){
+        String s = stringUtils.getFirstLetter("");
+        assertEquals(s, "");
+    }
+    @Test
+    void getLastLetter_returns_empty_string_when_given_null(){
+        String s = stringUtils.getFirstLetter(null);
+        assertEquals(s, "");
+    }
 }
