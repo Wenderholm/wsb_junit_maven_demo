@@ -28,12 +28,12 @@ class StringUtilsTest {
     }
     @Test
     void getLastLetter_returns_empty_string_when_given_empty_string(){
-        String s = stringUtils.getFirstLetter("");
+        String s = stringUtils.getLastLetter("");
         assertEquals(s, "");
     }
     @Test
     void getLastLetter_returns_empty_string_when_given_null(){
-        String s = stringUtils.getFirstLetter(null);
+        String s = stringUtils.getLastLetter(null);
         assertEquals(s, "");
     }
 }
